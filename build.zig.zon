@@ -1,11 +1,11 @@
 .{
-    .name = "zlugify",
+    .name = .zlugify,
     .version = "1.0.1",
-
+    .fingerprint = 0x60f9ca29b9e8f7a5,
     .dependencies = .{
-        .@"anyascii.zig" = .{
-            .url = "https://code.zeptotech.net/zedd/anyascii.zig/archive/v1.1.1.tar.gz",
-            .hash = "1220800d403fc841a4c7b9d09ae8759ae28adff05de33836a3f69f02e8e0ac77bae9",
+        .anyascii_zig = .{
+            .url = "https://github.com/awesomo4000/anyascii.zig/archive/refs/tags/v1.1.1.tar.gz",
+            .hash = "anyascii_zig-1.1.0-vzj3TGOHFAAqKU1OyUZiryZFcP6NyjioRYPLchlZeijk",
         },
     },
 
