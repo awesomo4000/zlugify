@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
         .anyascii_zig = .{
-            .url = "https://github.com/awesomo4000/anyascii.zig/archive/refs/tags/v1.1.0.tar.gz",
-            .hash = "anyascii_zig-1.1.0-vzj3TIeHFABLRor6TTWfb1cLPPH76xf6wMo45EeJnF2b",
+            .url = "https://github.com/awesomo4000/anyascii.zig/archive/refs/tags/v1.2.0.tar.gz",
+            .hash = "anyascii_zig-1.2.0-vzj3TM6HFAA3SwrMn_Eg8RzHjRkhlKcFljMFxIJ2FO3n",
         },
     },
 

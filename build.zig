@@ -19,12 +19,16 @@ pub fn build(b: *std.Build) void {
     zlugify.addImport("anyascii", anyascii.module("anyascii"));
 
     // Library unit tests.
-    const lib_unit_tests = b.addTest(.{
+    const test_module = b.createModule(.{
         .root_source_file = b.path("src/lib.zig"),
         .target = target,
         .optimize = optimize,
     });
-    lib_unit_tests.root_module.addImport("anyascii", anyascii.module("anyascii"));
+    test_module.addImport("anyascii", anyascii.module("anyascii"));
+
+    const lib_unit_tests = b.addTest(.{
+        .root_module = test_module,
+    });
     const run_lib_unit_tests = b.addRunArtifact(lib_unit_tests);
 
     const test_step = b.step("test", "Run unit tests.");
