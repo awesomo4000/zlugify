@@ -1,8 +1,8 @@
 .{
     .name = .zlugify,
-    .version = "1.0.1",
+    .version = "1.1.0",
     .fingerprint = 0x60f9ca29b9e8f7a5,
-    .minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .anyascii_zig = .{
             .url = "https://github.com/awesomo4000/anyascii.zig/archive/refs/tags/v1.2.0.tar.gz",
