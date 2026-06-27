@@ -1,12 +1,12 @@
 .{
     .name = .zlugify,
-    .version = "1.1.0",
+    .version = "1.2.0",
     .fingerprint = 0x60f9ca29b9e8f7a5,
-    .minimum_zig_version = "0.15.2",
+    .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .anyascii_zig = .{
-            .url = "https://github.com/awesomo4000/anyascii.zig/archive/refs/tags/v1.2.0.tar.gz",
-            .hash = "anyascii_zig-1.2.0-vzj3TM6HFAA3SwrMn_Eg8RzHjRkhlKcFljMFxIJ2FO3n",
+            .url = "https://github.com/awesomo4000/anyascii.zig/archive/refs/tags/v1.3.0.tar.gz",
+            .hash = "anyascii_zig-1.3.0-vzj3TAKIFAA8gdgpEWsN2zwkXoFeyB5Oiod8K53iZnrn",
         },
     },
 

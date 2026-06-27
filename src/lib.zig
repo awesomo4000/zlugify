@@ -9,8 +9,8 @@ const valuesToStrip = " \t\r\n\'\"/\\";
 pub fn slugifySeparator(allocator: std.mem.Allocator, str: []const u8, separator: u8) ![]u8 {
 	// Convert the provided UTF-8 string to ASCII.
 	const fullResult = try anyascii.utf8ToAscii(allocator, str);
-	const startShift = fullResult.len - std.mem.trimLeft(u8, fullResult, valuesToStrip).len;
-	const endShift = fullResult.len - std.mem.trimRight(u8, fullResult, valuesToStrip).len;
+	const startShift = fullResult.len - std.mem.trimStart(u8, fullResult, valuesToStrip).len;
+	const endShift = fullResult.len - std.mem.trimEnd(u8, fullResult, valuesToStrip).len;
 	const result = fullResult[startShift..fullResult.len - endShift];
 
 	// Check each char to remove them / replace them by their slugged version if needed.

@@ -5,3 +5,6 @@
 # Zig
 .zig-cache/
 zig-out/
+
+CLAUDE.md
+zig-pkg/
